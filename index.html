@@ -6,9 +6,19 @@ author: Simon Maynard
 
 <div id="main" role="main">
   <h1>About me</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>In eu ipsum nisl, et viverra ante. Duis eget turpis massa, sed ullamcorper velit. In hac habitasse platea dictumst. Duis rhoncus mollis ante, nec aliquet risus porta eget. Nunc elit dolor, volutpat id vehicula molestie, sollicitudin vel arcu. Etiam consectetur, arcu eget pulvinar posuere, sem diam tincidunt justo, a porta sapien nisl vel mauris. Etiam non sapien nec metus mattis congue. Nulla sed lectus eget elit condimentum posuere. Integer iaculis facilisis dolor, at rutrum odio ultrices viverra. Praesent a lectus purus, in facilisis quam. Cras vitae ipsum nec eros egestas pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lobortis congue odio non dapibus. Nulla tortor lectus, ullamcorper nec elementum eu, mattis mollis orci. Duis blandit, nisl eu iaculis semper, risus justo euismod nunc, vitae faucibus purus libero nec metus.</p>
+    <p>Currently working at <a href="http://www.heyzap.com">Heyzap</a> in San Francisco across their entire software stack. Before moving to the bay area, I worked for 6 years in the telecoms and finance industries in the UK as a Software Engineer and Project Manager.</p>
+    <p></p>
+  <h1>Projects</h1>
+    <dl>
+      <dt><a href="https://github.com/snmaynard/mongo-profiler">Mongo Profile Analysis</a></dt>
+      <dd>Very simple coffeescript node application to analyse recent profiler information from a mongo database and output
+          various useful stats to help try and pinpoint performance issues.</dd>
+    </dl>
   <h1>Blog posts</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>In eu ipsum nisl, et viverra ante. Duis eget turpis massa, sed ullamcorper velit. In hac habitasse platea dictumst. Duis rhoncus mollis ante, nec aliquet risus porta eget. Nunc elit dolor, volutpat id vehicula molestie, sollicitudin vel arcu. Etiam consectetur, arcu eget pulvinar posuere, sem diam tincidunt justo, a porta sapien nisl vel mauris. Etiam non sapien nec metus mattis congue. Nulla sed lectus eget elit condimentum posuere. Integer iaculis facilisis dolor, at rutrum odio ultrices viverra. Praesent a lectus purus, in facilisis quam. Cras vitae ipsum nec eros egestas pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec lobortis congue odio non dapibus. Nulla tortor lectus, ullamcorper nec elementum eu, mattis mollis orci. Duis blandit, nisl eu iaculis semper, risus justo euismod nunc, vitae faucibus purus libero nec metus.</p>
+    Check back soon for blog posts!
+      <ul>
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
 </div>

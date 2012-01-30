@@ -279,10 +279,13 @@ h1 {
     min-height: 100%;
 }
 
+dd {
+    padding-top: 10px;
+}
+
 section#container {
     padding-top: 20px;
     padding-bottom: 90px;
-    text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
