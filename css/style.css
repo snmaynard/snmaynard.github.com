@@ -226,13 +226,24 @@ header#top_bar {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
-    box-shadow: 0px 5px 5px #000;
+    box-shadow: 0px 5px 5px #333;
+    text-shadow: 1px 1px 0px #333;
 }
 
 header#top_bar a {
     color: white;
     text-decoration: none;
-    text-overflow: clip;
+}
+
+header #rear_profile_pic {
+    width: 125px;
+    height: 125px;
+    position: absolute;
+    z-index: -9999;
+    top: 25px;
+    left: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #333;
 }
 
 header #profile_pic {
@@ -241,7 +252,7 @@ header #profile_pic {
     top: 25px;
     left: 30px;
     border-radius: 10px;
-    box-shadow: 0px 5px 5px #000;
+    box-shadow: 0px 5px 5px #333;
 }
 
 .profile_links {
@@ -267,9 +278,8 @@ section#container {
     padding-top: 20px;
     padding-bottom: 90px;
     text-align: center;
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
-    overflow: auto;
 }
 
 footer {
@@ -277,7 +287,6 @@ footer {
     width: 100%;
     margin-top: -90px;
 	height: 70px;
-	clear: both;
 }
 
 
