@@ -50,9 +50,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #000; }
+a:visited { color: #000; }
+a:hover { color: #000; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -210,9 +210,75 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: 
    ========================================================================== */
+html, body {
+    height: 100%;
+}
 
+body {
+    font-family: 'Gudea', sans-serif;
+    font-size: 16px
+}
 
+header#top_bar {
+    background-color: #B22222;
+    font-family: 'Lustria', serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0px 5px 5px #000;
+}
 
+header#top_bar a {
+    color: white;
+    text-decoration: none;
+    text-overflow: clip;
+}
+
+header #profile_pic {
+    position: absolute;
+    z-index: 9999;
+    top: 25px;
+    left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #000;
+}
+
+.profile_links {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.profile_links a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+section#container {
+    padding-top: 20px;
+    padding-bottom: 90px;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    margin-top: -90px;
+	height: 70px;
+	clear: both;
+}
 
 
 

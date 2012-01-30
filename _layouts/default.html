@@ -21,6 +21,8 @@
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
   <link rel="shortcut icon" href="http://snmaynard.com/favicon.ico" />
+  <!-- Google fonts shizz -->
+  <link href='http://fonts.googleapis.com/css?family=Lustria|Gudea|Raleway:100' rel='stylesheet' type='text/css'>
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
@@ -36,10 +38,20 @@
 </head>
 
 <body>
-
-  <div id="container">
-    {{ content }}
-  </div> <!--! end of #container -->
+  <div id="wrap">
+    <header id="top_bar">
+      <img id="profile_pic" src="img/me.jpeg" alt="Profile picture" width="125px" height="125px" />
+      <a href="/">Simon Maynard - snmaynard.com</a>
+    </header>
+  
+    <section id="container">
+      {{ content }}
+    </section> <!--! end of #container -->
+  </div>
+  <footer>
+    <hr />
+    {% include profile_links.html %}
+  </footer>
 
 
   <!-- JavaScript at the bottom for fast page loading -->
