@@ -266,8 +266,13 @@ header #profile_pic {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lustria', sans-serif;
     text-align: center;
+}
+
+h1 {
+    text-shadow: 1px 2px 0px #ccc;
+    font-size: 26px;
 }
 
 #wrap {
