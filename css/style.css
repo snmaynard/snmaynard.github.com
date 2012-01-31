@@ -216,7 +216,8 @@ html, body {
 
 body {
     font-family: 'Gudea', sans-serif;
-    font-size: 16px
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 header#top_bar {
@@ -235,6 +236,10 @@ header#top_bar a {
     text-decoration: none;
 }
 
+header#top_bar #title {
+    overflow: hidden;
+}
+
 header #rear_profile_pic {
     width: 125px;
     position: absolute;
@@ -248,7 +253,6 @@ header #rear_profile_pic {
 header #profile_pic {
     width: 125px;
     position: absolute;
-    z-index: 9999;
     top: 25px;
     left: 30px;
     border-radius: 10px;
@@ -266,7 +270,8 @@ header #profile_pic {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lustria', sans-serif;
+    font-family: 'Lustria', serif;
+    font-weight: normal; /*This fixes a gay iOS bug*/
     text-align: center;
 }
 
@@ -284,6 +289,8 @@ dd {
 
 section#container {
     padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 90px;
     max-width: 800px;
     margin: 0 auto;

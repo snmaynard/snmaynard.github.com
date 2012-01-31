@@ -42,7 +42,7 @@
     <header id="top_bar">
       <div id="rear_profile_pic"></div>
       <img id="profile_pic" src="img/me.jpeg" alt="Profile picture" />
-      <a href="/">Simon Maynard - snmaynard.com</a>
+      <div id="title"><a href="/">Simon Maynard - snmaynard.com</a></div>
     </header>
   
     <section id="container">
@@ -74,6 +74,14 @@
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
+  </script>
+  
+  <script>
+  $(document).ready(function() {
+    if ((screen.width < 480) || (screen.height < 480)) {
+        $("#profile_pic").hide();
+      }
+  });
   </script>
 
 
