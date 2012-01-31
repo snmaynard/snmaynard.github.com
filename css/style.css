@@ -237,7 +237,6 @@ header#top_bar a {
 
 header #rear_profile_pic {
     width: 125px;
-    height: 125px;
     position: absolute;
     z-index: -9999;
     top: 25px;
@@ -247,6 +246,7 @@ header #rear_profile_pic {
 }
 
 header #profile_pic {
+    width: 125px;
     position: absolute;
     z-index: 9999;
     top: 25px;
@@ -271,7 +271,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    text-shadow: 1px 2px 0px #ccc;
     font-size: 26px;
 }
 
