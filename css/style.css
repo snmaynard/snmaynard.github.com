@@ -283,8 +283,12 @@ h1 {
     min-height: 100%;
 }
 
+dt {
+    padding-bottom: 5px;
+}
+
 dd {
-    padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 section#container {
