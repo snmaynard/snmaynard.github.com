@@ -50,9 +50,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #000; }
-a:visited { color: #000; }
-a:hover { color: #000; }
+a { color: #333; }
+a:visited { color: #333; }
+a:hover { color: #333; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -271,49 +271,88 @@ header #profile_pic {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lustria', serif;
-    font-weight: normal; /*This fixes a gay iOS bug*/
-    text-align: center;
+    font-weight: normal; /*This fixes an annoying iOS bug*/
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+  margin-top: 50px;
+  padding-bottom: 3px;
+  font-size: 22px;
+  border-bottom: 1px solid #eee;
+}
+
+#header {
+  margin: 40px 0;
 }
 
 #wrap {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 dt {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 dd {
-    padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 section#container {
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 90px;
-    max-width: 800px;
-    margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 90px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
-    position: relative;
-    width: 100%;
-    margin-top: -90px;
-	height: 70px;
+  position: relative;
+  width: 100%;
+  margin-top: -90px;
+  height: 70px;
 }
 
 
+#share {
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
 
+h2.date {
+  font-size: 1.1em;
+  margin-top: -20px;
+  border-bottom: none;
+  text-align: center;
+  color: #555;
+}
 
+.highlight {
+  padding: 0;
+  margin: 30px 0;
+  background-color: #F9F7FF;
+  border: 1px solid #DDD;
+  font-size: 0.9em;
+}
 
+code {
+  padding:0px;
+}
 
+pre {
+  margin: 15px 20px;
+}
 
-
+p {
+  line-height: 1.5;
+  color: #333;
+}
 
 
 
