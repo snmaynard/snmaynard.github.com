@@ -3,7 +3,7 @@ layout: post
 title: Things I wish I knew about MongoDB a year ago
 ---
 
-I've used MongoDB for over a year at scale at both [Heyzap](http://www.heyzap.com) and [Bugsnag](https://bugsnag.com) and along the way I've learnt many things the hard way. Here is a summary of the things I wish someone had told me earlier.
+I've used MongoDB for over a year at scale at both [Heyzap](http://www.heyzap.com) and [Bugsnag](https://bugsnag.com) and I've found it to be a very capable database. As with all databases, there are some gotchas, and here is a summary of the things I wish someone had told me earlier.
 
 ## Selective counts are slow even if indexed
 
