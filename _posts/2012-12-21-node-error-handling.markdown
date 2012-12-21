@@ -99,7 +99,7 @@ From a high level they allow you to deal with exceptions and errors in a single 
 
 {% highlight javascript %}var mainDomain = domain.create();
 mainDomain.run(function() {
-    fs.readFile(filename, 'utf8', d.intercept(function(data) {
+    fs.readFile(filename, 'utf8', mainDomain.intercept(function(data) {
         // note, the first argument is never passed to the
         // callback since it is assumed to be the 'Error' argument
         // and thus intercepted by the domain.
