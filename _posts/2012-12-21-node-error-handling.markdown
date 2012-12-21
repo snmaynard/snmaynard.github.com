@@ -71,6 +71,20 @@ async(function(error){
 
 This way you can trivially handle errors in any callbacks without having to nest try catch statements. However you still have to remember to check the error in multiple places and you may have very similar error handling code litered throughout the application logic.
 
+When dealing with synchronous code, you can return an error object, and easily detect an error like in the following example,
+
+{% highlight javascript %}function divideBy(a,b) {
+    if(b === 0) {
+        return new Error("Divide by zero!");
+    }
+    return a/b;
+}
+
+var value = divideBy(1,0);
+if(value instanceof Error) {
+    console.error(value);
+};{% endhighlight %}
+
 ## Managing Errors
 
 I've seen all three methods being used to inform a caller about an error. This gets especially bad when all three methods are in use within the same few lines of code in your app. There are some [techniques](http://dc-syntropy.blogspot.com/2012/03/error-handling-in-nodejs.html) for trying to manage this, but unfortunately we have to manually manage it. My preference, is to always use error objects that get passed to a callback as the error code path is clearer and more maintainable, but when using third party libraries and even core node code, you get what you are given.
