@@ -7,7 +7,7 @@ We use node.js at [Bugsnag](https://bugsnag.com) and also support error tracking
 
 ## Exceptions
 
-Exceptions are supported in javascript, and you may well be tempted to use them to communicate an error, but due to asyncronous callbacks, it can be a bad idea. Throwing them from within asyncronous code means that a surrounding catch block isn't actually in the stack at that point. Consider the following example,
+Exceptions are supported in javascript, and you may well be tempted to use them to communicate an error, but due to asynchronous callbacks, it can be a bad idea. Throwing them from within asynchronous code means that a surrounding catch block isn't actually in the stack at that point. Consider the following example,
 
 {% highlight javascript %}function async(callback) {
     process.nextTick(function(){
