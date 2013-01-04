@@ -302,6 +302,14 @@ dd {
   padding-bottom: 25px;
 }
 
+.short-list dd {
+  padding-bottom: 15px;
+}
+
+.short-list dd:last-of-type{
+    padding-bottom:0;
+}
+
 section#container {
   padding-top: 20px;
   padding-left: 10px;
@@ -323,6 +331,7 @@ footer {
   text-align: center;
   display: block;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h2.date {
