@@ -5,7 +5,7 @@ title: Node.js error handling
 
 We use node.js at [Bugsnag](https://bugsnag.com) and also support error tracking for [node.js](https://bugsnag.com/docs/notifiers/node), so you can use Bugsnag in your node.js apps to track your errors.
 
-While building out these projects I've had a bunch of experience with the state of error handling and thought I'd pass on what I've found. I'm going to discuss the various ways I've seen error handling done, and talk a little about what the future holds.
+While building out Bugsnag I've had a bunch of experience with the state of error handling and thought I'd pass on what I've found. I'm going to discuss the various ways I've seen error handling done, and talk a little about what the future holds.
 
 ## Exceptions
 
