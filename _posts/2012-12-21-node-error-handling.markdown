@@ -48,7 +48,7 @@ event.on("error", function(error) {
 
 This allows you to split the success and error functionality so there is a clean split between the two. You can even call the same callback from multiple event emitters so you can have common error handlers. These event emitters come with native support for 'error' events. From the docs,
 
-<em>When an EventEmitter instance experiences an error, the typical action is to emit an 'error' event. Error events are treated as a special case in node. If there is no listener for it, then the default action is to print a stack trace and exit the program.</em>
+>When an EventEmitter instance experiences an error, the typical action is to emit an 'error' event. Error events are treated as a special case in node. If there is no listener for it, then the default action is to print a stack trace and exit the program.
 
 So ensure that any event emitters that emit the error event are listened to, otherwise your app will crash.
 
@@ -121,4 +121,4 @@ This goes some way to trying to create a standard interface for error handling i
 
 The maintainers of node are very clear that this is a work in progress, but they are soliciting feedback, so I'd encourage everyone to check them out and let them know what you think.
 
-<em>This feature is new in Node version 0.8. It is a first pass, and is expected to change significantly in future versions. Please use it and provide feedback.</em>
+>This feature is new in Node version 0.8. It is a first pass, and is expected to change significantly in future versions. Please use it and provide feedback.

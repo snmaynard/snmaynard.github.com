@@ -363,6 +363,10 @@ p {
   color: #333;
 }
 
+blockquote {
+  font-style: italic;
+}
+
 
 
 
