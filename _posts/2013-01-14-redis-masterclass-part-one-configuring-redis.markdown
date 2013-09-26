@@ -84,4 +84,4 @@ There are a lot of ways of sharding Redis keys, but be aware that if two keys ar
 
 ## Part Two - Monitoring
 
-Part Two of the series will cover how to monitor your Redis instances. Look out for it in the next few days.
+Check out Part Two of the series, which covers [how to monitor your Redis instances](/2013/01/22/redis-masterclass-part-two-monitoring-redis/).
